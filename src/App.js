@@ -1,18 +1,18 @@
 import "./App.css";
-import Header from './Header';
-import Nav from './Nav';
-import Main from './Main';
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
 
 const App = () => {
   return (
     <div className="HeaderNav">
       <Header />
       <Nav />
-    <div className="MainContainer">
-      <Main />
+      <div className="MainContainer">
+        <Main />
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
 export default App;
