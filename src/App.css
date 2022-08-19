@@ -1,0 +1,20 @@
+.HeaderNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header {
+    flex: 1;
+}
+
+nav {
+    flex: 1;
+}
+
+.MainContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

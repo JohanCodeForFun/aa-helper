@@ -1,7 +1,11 @@
+import DayCounter from "./day-counter";
+
 const Main = () => {
+    return (
     <main>
-        <p>Main</p>
+        <DayCounter />
     </main>
+    )
 }
 
 export default Main;

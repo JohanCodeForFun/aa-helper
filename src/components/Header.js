@@ -1,6 +1,8 @@
+
+
 const Header = () => (
     <header>
-        <p>Header</p>
+        <h1>Large Header</h1>
     </header>
 )
 
