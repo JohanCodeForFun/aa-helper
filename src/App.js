@@ -6,12 +6,9 @@ import Main from './components/main';
 const App = () => {
   return (
     <div className="HeaderNav">
-      <Header />
       <Nav />
-    <div className="MainContainer">
       <Main /> 
      </div>
-    </div>
   )
 }
 

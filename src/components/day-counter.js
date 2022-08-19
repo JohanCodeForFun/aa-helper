@@ -1,7 +1,12 @@
+import './day-counter.css';
+
 const DayCounter = () => {
+
+    let counter = 97;
+
     return ( 
         <div>
-            <h3>97</h3>
+            <h3>{counter}</h3>
             <p>Day's since last drink!</p>
         </div>
      );
