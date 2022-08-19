@@ -6,8 +6,8 @@ const DayCounter = () => {
 
     return ( 
         <div>
-            <h3>{counter}</h3>
-            <p>Day's since last drink!</p>
+            <h1>{counter}</h1>
+            <h3>Day's since last drink!</h3>
         </div>
      );
 }
