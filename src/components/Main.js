@@ -1,7 +1,7 @@
 import DayCounter from "./day-counter";
 import CallSupport from "./call-support";
 import Alert from "./alert";
-import Qoutes from "./qoutes";
+import Quotes from "./quotes";
 import './main.css'
 
 const Main = () => {
@@ -9,7 +9,7 @@ const Main = () => {
     return (
     <main>
         <DayCounter />
-        <Qoutes />
+        <Quotes />
         <Alert />
         <CallSupport />
     </main>

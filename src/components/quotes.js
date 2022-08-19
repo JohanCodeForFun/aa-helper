@@ -1,4 +1,4 @@
-const Qoutes = () => {
+const Quotes = () => {
     return ( 
         <div>
             <p>
@@ -11,4 +11,4 @@ const Qoutes = () => {
      );
 }
  
-export default Qoutes;
+export default Quotes;
