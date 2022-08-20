@@ -3,7 +3,7 @@ import ReactModal from "react-modal";
 import React, { useState } from "react";
 import About from './nav/about';
 import Settings from './nav/settings';
-import Map from './nav/map';
+import MapDisplay from './nav/map';
 
 ReactModal.setAppElement('#root');
 
@@ -41,7 +41,7 @@ const Nav = () => {
         <button onClick={() => setModalIsOpenSettings(false)}>Close Modal</button>
       </ReactModal>
       <ReactModal isOpen={modalIsOpenMap} onRequestClose={() => setModalIsOpenMap(false)}>
-        <Map />
+        <MapDisplay />
         <button onClick={() => setModalIsOpenMap(false)}>Close Modal</button>
       </ReactModal>
     </div>

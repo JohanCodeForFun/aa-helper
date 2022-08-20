@@ -6,6 +6,11 @@
     padding-left: 8px;
 }
 
+.map-container {
+    width: 100%;
+    height: 100vh;
+}
+
 nav {
     border: 1px solid coral;
     width: 60vw;
