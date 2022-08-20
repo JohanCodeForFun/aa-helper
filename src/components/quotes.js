@@ -1,5 +1,4 @@
 import { useEffect, useState, useMemo } from "react";
-import Quote from './quoe';
 
 const Quotes = () => {
     const [allQuotes, setAllQuotes] = useState([]);
@@ -20,10 +19,6 @@ const Quotes = () => {
         }
     }, [allQuotes]);
 
-
-    const Quote = ({ quote }) => {
-
-    }
     return ( 
         <div>
             <p>
@@ -34,7 +29,6 @@ const Quotes = () => {
             </p>
         </div>
      );
-
 }
  
 export default Quotes;
