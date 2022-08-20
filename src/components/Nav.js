@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <div>
       <nav>
-      <h3>Hello {person.name}</h3>
+      <p className="logo">Hello, {person.name}</p>
         <ul>
           <li>
             <a href="#">About</a>

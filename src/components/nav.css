@@ -1,16 +1,25 @@
-h3 {
+.logo {
     color: red;
+    font-size: large;
+    font-weight: 700;
+    flex-shrink: 1;
+    padding-left: 8px;
 }
 
 nav {
+    border: 1px solid coral;
+    width: 60vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
 
 ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
     list-style-type: none;
-    border: 1px solid #555;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +27,6 @@ ul {
 li {
     display: inline;
     text-align: center;
-    border-bottom: 1px solid #555;
 }
 
 li:last-child {
