@@ -1,9 +1,9 @@
 import { useEffect, useState, useMemo } from "react";
-import DayCounter from "./day-counter";
-import CallSupport from "./call-support";
-import Alert from "./alert";
-import FeaturedQuotes from "./featured-quotes";
-import ProjectCounter from "./project-counter";
+import DayCounter from "./main/day-counter";
+import CallSupport from "./main/call-support";
+import Alert from "./main/alert";
+import FeaturedQuotes from "./main/featured-quotes";
+import ProjectCounter from "./main/project-counter";
 import "./main.css";
 
 const Main = () => {

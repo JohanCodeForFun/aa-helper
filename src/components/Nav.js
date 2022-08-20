@@ -1,9 +1,9 @@
 import "./nav.css";
 import ReactModal from "react-modal";
 import React, { useState } from "react";
-import About from './about';
-import Settings from './settings';
-import Map from './map';
+import About from './nav/about';
+import Settings from './nav/settings';
+import Map from './nav/map';
 
 ReactModal.setAppElement('#root');
 
