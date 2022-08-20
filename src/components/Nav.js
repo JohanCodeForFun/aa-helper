@@ -1,11 +1,16 @@
 import "./nav.css";
 import ReactModal from "react-modal";
 import React, { useState } from "react";
+import About from './about';
+import Settings from './settings';
+import Map from './map';
 
 ReactModal.setAppElement('#root');
 
 const Nav = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpenAbout, setModalIsOpenAbout] = useState(false);
+  const [modalIsOpenSettings, setModalIsOpenSettings] = useState(false);
+  const [modalIsOpenMap, setModalIsOpenMap] = useState(false);
 
   const person = {
     name: "Johan",
@@ -17,20 +22,27 @@ const Nav = () => {
       <p className="logo">Hello, {person.name}</p>
         <ul>
           <li>
-            <a href="#" onClick={() => setModalIsOpen(true)}>About</a>
+            <a href="#" onClick={() => setModalIsOpenAbout(true)}>About</a>
           </li>
           <li>
-            <a href="#">Settings</a>
+            <a href="#" onClick={() => setModalIsOpenSettings(true)}>Settings</a>
           </li>
           <li>
-            <a href="#">Show Map</a>
+            <a href="#" onClick={() => setModalIsOpenMap(true)}>Show Map</a>
           </li>
         </ul>
       </nav>
-      <ReactModal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-        <h2>About Modal</h2>
-        <p>This app is created for everyone struggling withbreaking your addiction...</p>
-        <button onClick={() => setModalIsOpen(false)}>Close Modal</button>
+      <ReactModal isOpen={modalIsOpenAbout} onRequestClose={() => setModalIsOpenAbout(false)}>
+        <About />
+        <button onClick={() => setModalIsOpenAbout(false)}>Close Modal</button>
+      </ReactModal>
+      <ReactModal isOpen={modalIsOpenSettings} onRequestClose={() => setModalIsOpenSettings(false)}>
+        <Settings />
+        <button onClick={() => setModalIsOpenSettings(false)}>Close Modal</button>
+      </ReactModal>
+      <ReactModal isOpen={modalIsOpenMap} onRequestClose={() => setModalIsOpenMap(false)}>
+        <Map />
+        <button onClick={() => setModalIsOpenMap(false)}>Close Modal</button>
       </ReactModal>
     </div>
   );
