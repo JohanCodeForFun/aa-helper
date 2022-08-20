@@ -4,3 +4,8 @@ div {
     align-items: center;
     flex-direction: column;
 }
+
+.counterText {
+    font-size: xx-large;
+    font-weight: 700;
+}

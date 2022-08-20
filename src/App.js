@@ -3,6 +3,7 @@ import Nav from './components/nav';
 import Main from './components/main';
 
 const App = () => {
+
   return (
     <div className="HeaderNav">
       <Nav />
